@@ -27,12 +27,14 @@ Chegada -> [Fila 1: Atendimento] -> recepção -> [Fila 2: Consultas] -> médico
 ## Estrutura do projeto
 
 ```
-src/
+.
 ├── Paciente.java             dados do paciente e senha automática
 ├── ComparadorPrioridade.java regra de prioridade (bônus)
 ├── ServicoClinica.java       as duas filas e as regras de negócio
 ├── Main.java                 menu de console (Scanner)
-└── TestesClinica.java        testes (7 casos, 28 verificações)
+├── TestesClinica.java        testes (7 casos, 28 verificações)
+├── compilar.bat / compilar.sh   scripts para compilar
+└── README.md
 ```
 
 ## Como compilar e rodar
@@ -41,7 +43,7 @@ src/
 
 **Windows:** dê dois cliques em `compilar.bat` (ou rode no terminal). **Linux/Mac:** `./compilar.sh`.
 
-Ou, manualmente, dentro da pasta `src`:
+Ou, manualmente, na pasta do projeto:
 
 ```
 javac -encoding UTF-8 *.java
@@ -52,7 +54,7 @@ No Windows, para os acentos aparecerem certos no terminal, rode antes `chcp 6500
 
 ## Como rodar os testes
 
-Dentro da pasta `src`, depois de compilar:
+Na pasta do projeto, depois de compilar:
 
 ```
 java TestesClinica
