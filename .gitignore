@@ -1,0 +1,3 @@
+# Arquivos compilados (cada um gera na própria máquina com javac)
+*.class
+out/
